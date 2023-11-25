@@ -49,8 +49,8 @@ mutable struct Unit
     armor::Float64
     movement::Int #Status effect might alter this.
     action::Int #Status effect might alter this.
-    status::Feature #Status effects.
-    feature::Feature #Permanent unit features or other features that stay on permanently until some effects.
+    #status::Feature #Status effects.
+    #feature::Feature #Permanent unit features or other features that stay on permanently until some effects.
     weapons::Vector{Weapon}
     name::String
     side::Int
@@ -67,7 +67,7 @@ end
 =#
 mutable struct Tile
 
-    features::Feature
+    #features::Feature
     movement_cost::Int
     height::Int
     unit::Union{Unit,Nothing}
