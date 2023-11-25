@@ -1,35 +1,17 @@
 
 
 
-struct workInProgress end #This is a placeholder for functions.
 
-(::workInProgress)(x...) = error("Working in progress.")
-
-
-#=
-struct StatusEffect
-    #???
-    #Working in progress.
+struct Ability
+    cooldown::Float64
+    opcode::UInt64
 end
 
-
-struct TileFeature
-    #???
-    #Working in progress.
+struct Effect
+    duration::Float64
+    opcode::UInt64
 end
 
-struct WeaponFeature
-    #???
-    #Working in progress.
-end
-=#
-#=
-struct Feature
-    numbercontent::Dict{String,Float64}
-    subfeatures::Dict{String,Feature}
-    Feature() = new(Dict{String,Float64}(),Dict{String,Feature}())
-end
-=#
 
 struct Weapon
     #These are normally integers but can be modified so float they are.
